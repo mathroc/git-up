@@ -1,0 +1,22 @@
+- hosts: all
+  roles:
+    - git-up-deployable
+    # - role: git-up-deployable
+    #   deploy_hosts:
+    #     - 127.0.0.1
+    #     - 192.168.0.0/16
+    #   deploy_conf:
+    #     - name: "deployA"
+    #       user: "userA"
+    #       group: "userA"
+    #       uid: 333
+    #       home: "/home/userA"
+    #       folder: "/var/local/workA"
+    #       hosts: "{{ deploy_hosts }}"
+    #     - name: "deployB"
+    #       user: "userB"
+    #       group: "userB"
+    #       uid: 334
+    #       home: "/home/userB"
+    #       folder: "/var/local/workB"
+    #       hosts: "{{ deploy_hosts }}"

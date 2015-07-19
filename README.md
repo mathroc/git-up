@@ -141,7 +141,7 @@ Include git-up-deployable this way :
 
 ```
 -- in your playbook.yml
-  - { role: git-up-deployable,
+  - { roles: git-up-deployable,
       deploy_hosts:
 	  - 127.0.0.1
       - 192.168.0.0/16

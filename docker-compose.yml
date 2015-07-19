@@ -1,0 +1,15 @@
+workstation:
+  build: .
+  dockerfile: tests/containers/workstation.Dockerfile
+  links:
+    - provision
+
+provision:
+  build: .
+  dockerfile: tests/containers/provision.Dockerfile
+  links:
+    - deployable
+
+deployable:
+  build: .
+  dockerfile: tests/containers/deployable.Dockerfile
